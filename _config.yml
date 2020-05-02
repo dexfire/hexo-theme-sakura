@@ -72,7 +72,7 @@ analytics:
   cnzz_site_id: #<ID>
   tencent_site_id: #<ID>
   la_site_id: #<ID>
-  baidu_site_id: #<ID>
+  baidu_site_id: 18d22dda3acd079101f04a6eacf3781e
   gtm_container_id: #<ID>
 
 # your site build time or founded date
