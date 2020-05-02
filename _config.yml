@@ -65,7 +65,15 @@ startdash:
   - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
   - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
 
-
+# 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
+analytics: 
+  google_site_id: #<ID>
+  gtags_site_id: #<ID>
+  cnzz_site_id: #<ID>
+  tencent_site_id: #<ID>
+  la_site_id: #<ID>
+  baidu_site_id: #<ID>
+  gtm_container_id: #<ID>
 
 # your site build time or founded date
 siteBuildingTime: 07/17/2018
