@@ -9,7 +9,7 @@
     </div>
   </div>
 </footer> -->
-<footer id="colophon" class="site-footer" role="contentinfo">
+<!-- <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
     <div class="footertext">
       <div class="img-preload">
@@ -24,9 +24,54 @@
         </span>
       </p>
     </div>
+  </div>
+</footer> -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload"> <img
+          src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/disqus-preloader.svg"></div>
+      <p class="foo-logo"
+        style="background-image: url('https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sakura.svg');">
+      </p>
+
+      <!--p style="color: #666666;">Copyright &copy 2018 - 2020 <%= theme.siteName %>. <br> All Rights Reserved.</p-->
+      <p style="font-family: 'Ubuntu', sans-serif;"><span style="color: #666666;">Crafted with <i
+            class="fa fa-heart animated" style="color: #e74c3c;"></i> by <a rel="me"
+            href="https://hello.2heng.xin/@mashiro" target="_blank"
+            style="color: #000000;text-decoration:none;">Mashiro</a></span></p>
+      <p>Copyright &copy 2018 - 2020 <%= theme.siteName %> <a href="http://www.beian.miit.gov.cn"
+          target="_blank">沪ICP备17028213号</a></p>
+    </div>
+    <div class="footer-device">
+      <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank"
+            style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i
+            class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a
+            href="https://2heng.xin/" target="_blank"
+            style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a
+            href="https://www.hojun.cn/" target="_blank"
+            style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered
+          by Hexo, Hosted by Github Pages</a>
+        </span>
+      </p>
+    </div>
+
+    <p id="footer-sponsor"><a href="#" target="_blank" alt="CDN Sponsor" rel="nofollow"><img
+          src="https://2heng.xin/wp-content/themes/Sakura/images/Tencent_Cloud_logo.svg" alt="CDN Sponsor"
+          style="height: 1.5em;"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.vultr.com/?ref=7196564" target="_blank"
+        alt="Server provider" rel="nofollow"><img
+          src="https://2heng.xin/wp-content/themes/Sakura/images/vultr_logo__on-white.svg" alt="Server provider"
+          style="height: 1.5em;"></a>&nbsp;&nbsp;&nbsp;<a href="#" target="_blank" alt="Free CDN" rel="nofollow"><img
+          src="https://2heng.xin/wp-content/themes/Sakura/images/baidu_cdn.svg" alt="jsDelivr"
+          style="height: 1.5em;"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.google.com/intl/ja/analytics/"
+        target="_blank" alt="Analytics solution" rel="nofollow"><img
+          src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.8/img/logo/Google.svg" alt="Google Analytics"
+          style="height: 1.5em; "></a></p>
   </div><!-- .site-info -->
 </footer>
-
 
 
 <!-- <script src="/js/tocbot.js"></script> -->
@@ -43,20 +88,20 @@
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
 <script type="text/javascript">
-/* <![CDATA[ */
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"<%- theme.pjax %>","movies":{"url": "<%- theme.movies.url %>","name":"<%- theme.movies.name%>","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-} else {
-  var Poi = {"pjax":"<%- theme.pjax %>","movies":{"url": "<%- theme.movies.url %>","name":"<%- theme.movies.name%>","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-}
+  /* <![CDATA[ */
+  if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    var Poi = { "pjax": "<%- theme.pjax %>", "movies": { "url": "<%- theme.movies.url %>", "name": "<%- theme.movies.name%>", "live": "close" }, "windowheight": "fixed", "codelamp": "close", "ajaxurl": "", "order": "asc", "formpostion": "bottom" };
+  } else {
+    var Poi = { "pjax": "<%- theme.pjax %>", "movies": { "url": "<%- theme.movies.url %>", "name": "<%- theme.movies.name%>", "live": "open" }, "windowheight": "auto", "codelamp": "close", "ajaxurl": "", "order": "asc", "formpostion": "bottom" };
+  }
 /* ]]> */
 
 </script>
 <script>
-$(document).ready(function() {
-  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
-    if ($(".pattern-center").length > 0) { //有图的情况
-      tocbot.init({
+  $(document).ready(function () {
+    if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+      if ($(".pattern-center").length > 0) { //有图的情况
+        tocbot.init({
           // Where to render the table of contents.
           tocSelector: '.toc', // 放置目录的容器
           // Where to grab the headings to build the table of contents.
@@ -66,9 +111,9 @@ $(document).ready(function() {
           headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
           headingsOffset: -400,
           scrollSmoothOffset: -85
-      });
-    } else {
-      tocbot.init({
+        });
+      } else {
+        tocbot.init({
           // Where to render the table of contents.
           tocSelector: '.toc', // 放置目录的容器
           // Where to grab the headings to build the table of contents.
@@ -78,17 +123,17 @@ $(document).ready(function() {
           headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
           headingsOffset: -85,
           scrollSmoothOffset: -85
-      });
-    }
-    var offsetTop = $('.toc').offset().top - 95;
-    window.onscroll = function() {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      if (scrollTop >= offsetTop) {
-        $('.toc').addClass('toc-fixed');
-      } else {
-        $('.toc').removeClass('toc-fixed');
+        });
+      }
+      var offsetTop = $('.toc').offset().top - 95;
+      window.onscroll = function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop >= offsetTop) {
+          $('.toc').addClass('toc-fixed');
+        } else {
+          $('.toc').removeClass('toc-fixed');
+        }
       }
     }
-  }
-});
+  });
 </script>
