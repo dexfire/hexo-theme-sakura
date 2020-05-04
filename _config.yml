@@ -6,7 +6,7 @@ favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
 url: https://sakura.hojun.cn
 description: Live your life with passion! With some drive!
-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+cdn: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0.1
 pjax: 1
 sakura_widget:
 # 0关闭 1开启
