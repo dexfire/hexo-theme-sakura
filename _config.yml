@@ -3,17 +3,17 @@ prefixName: さくら荘その
 siteName: hojun
 # favicon and site master avatar
 favicon: /images/favicon.ico
-avatar: /img/custom/avatar.jpg
+avatar: /images/custom/avatar.jpg
 url: https://sakura.hojun.cn
 description: Live your life with passion! With some drive!
-cdn: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0.1
+cdn: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1
 pjax: 1
 sakura_widget:
 # 0关闭 1开启
 mathjax: 0
 
 notice: hexo-Sakura主题已经开源，目前正在开发中...
-lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg: <%= theme.cdn %>/images/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
@@ -48,14 +48,14 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp
-  - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp
+  - <%= theme.cdn %>/images/cover/(1).jpg.webp
+  - <%= theme.cdn %>/images/cover/(2).jpg.webp
+  - <%= theme.cdn %>/images/cover/(3).jpg.webp
+  - <%= theme.cdn %>/images/cover/(4).jpg.webp
+  - <%= theme.cdn %>/images/cover/(5).jpg.webp
+  - <%= theme.cdn %>/images/cover/(6).jpg.webp
+  - <%= theme.cdn %>/images/cover/(7).jpg.webp
+  - <%= theme.cdn %>/images/cover/(8).jpg.webp
 
 cdns:
   tocbot: //cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js
@@ -68,9 +68,9 @@ bgclass: filter-dot
 
 # startdash url, title, desc img
 startdash:
-  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
-  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
-  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
+  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /images/startdash/sakura.md.png}
+  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /images/startdash/bilibili.jpg}
+  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /images/startdash/wangshiwu.jpg}
 
 # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
 analytics:
@@ -87,13 +87,13 @@ siteBuildingTime: 07/17/2018
 
 #social  url, img PC端配置
 social:
-  github: {url: http://github.com/honjun, img: /img/social/github.png}
-  sina: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/sina.png}
-  wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/wangyiyun.png}
-  zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png}
-  email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
-  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
-  wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  github: {url: http://github.com/honjun, img: /images/social/github.png}
+  sina: {url: http://weibo.com/mashirozx?is_all=1, img: /images/social/sina.png}
+  wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: /images/social/wangyiyun.png}
+  zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /images/social/zhihu.png}
+  email: {url: http://weibo.com/mashirozx?is_all=1, img: /images/social/email.svg}
+  wechat: {url: /#, qrcode: /images/custom/wechat.jpg, img: /images/social/wechat.png}
+  wechat2: {url: /#, qrcode: /images/custom/wechat.jpg, img: /images/social/wechat.png}
 
 #social  url, img 移动端配置
 msocial:
@@ -103,9 +103,9 @@ msocial:
 
 donate:
   paypal: https://www.paypal.me/hojuncn
-  alipay: /img/custom/donate/AliPayQR.jpg
-  wechat: /img/custom/donate/WeChanQR.jpg
-  wechatSQ: /img/custom/donate/WeChanSQ.jpg
+  alipay: /images/custom/donate/AliPayQR.jpg
+  wechat: /images/custom/donate/WeChanQR.jpg
+  wechatSQ: /images/custom/donate/WeChanSQ.jpg
 
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
