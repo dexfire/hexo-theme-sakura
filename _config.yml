@@ -59,7 +59,7 @@ bg:
 
 cdns:
   tocbot: //cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js
-  valine: //unpkg.com/valine@1.3.4/dist/Valine.min.js
+  valine: //unpkg.com/valine/dist/Valine.min.js
   clipboard: //cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
   busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
@@ -127,5 +127,5 @@ aplayer:
 
 # Valine
 valine: true
-v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
+v_appId: aFI53WTJYb4qPknwn0l76Lnu-gzGzoHsz
+v_appKey: 2YeldrXS6Hm64JWCCLNgpj3C
