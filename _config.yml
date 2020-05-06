@@ -74,7 +74,7 @@ bgclass:
 startdash:
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /images/startdash/sakura.md.png}
   - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /images/startdash/bilibili.jpg}
-  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /images/startdash/wangshiwu.jpg}
+  - {url: /, title: dexfireの吐槽乐园, desc: 技术服务, img: /images/startdash/wangshiwu.jpg}
 
 # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
 analytics:
