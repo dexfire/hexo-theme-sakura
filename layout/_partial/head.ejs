@@ -85,6 +85,7 @@ Theme by Mashiro
     /*End of Initial Variables*/
   </script>
   <script type="text/javascript">
+    // "<%= theme.bg%>".split(",")
     var bg = "<%= theme.bg%>".split(",");
     var bgindex = Math.floor(Math.random() * bg.length);
     if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
