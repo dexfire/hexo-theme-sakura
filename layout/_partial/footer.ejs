@@ -4,10 +4,10 @@
   <div class="site-info">
     <div class="footertext">
       <div class="img-preload">
-        <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg">
-        <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/disqus-preloader.svg"></div>
+        <img src="<%= theme.cdn %>/images/other/wordpress-rotating-ball-o.svg">
+        <img src="<%= theme.cdn %>/images/other/disqus-preloader.svg"></div>
       <p class="foo-logo"
-        style="background-image: url('https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sakura.svg');"></p>
+        style="background-image: url('<%= theme.cdn %>/images/elements/sakura.svg');"></p>
 
       <!--p style="color: #666666;">Copyright &copy 2018 - 2020 <%= theme.siteName %>. <br> All Rights Reserved.</p-->
       <p style="font-family: 'Ubuntu', sans-serif;">
@@ -45,15 +45,15 @@
 
     <p id="footer-sponsor">
       <a href="#" target="_blank" alt="CDN Sponsor" rel="nofollow"><img
-          src="/images/Tencent_Cloud_logo.svg" alt="CDN Sponsor"
+          src="<%= theme.cdn %>/images/support/Tencent_Cloud_logo.svg" alt="CDN Sponsor"
           style="height: 1.5em;"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.vultr.com/?ref=7196564" target="_blank"
         alt="Server provider" rel="nofollow"><img
-          src="/images/vultr_logo__on-white.svg" alt="Server provider"
+          src="<%= theme.cdn %>/images/support/vultr_logo__on-white.svg" alt="Server provider"
           style="height: 1.5em;"></a>&nbsp;&nbsp;&nbsp;<a href="#" target="_blank" alt="Free CDN" rel="nofollow"><img
-          src="/images/baidu_cdn.svg" alt="jsDelivr"
+          src="<%= theme.cdn %>/images/support/baidu_cdn.svg" alt="jsDelivr"
           style="height: 1.5em;"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.google.com/intl/ja/analytics/"
         target="_blank" alt="Analytics solution" rel="nofollow"><img
-          src="/images/Google.svg" alt="Google Analytics"
+          src="<%= theme.cdn %>/images/support/Google.svg" alt="Google Analytics"
           style="height: 1.5em; "></a>
     </p>
   </div>
@@ -63,19 +63,19 @@
 <%- partial('changeSkin-gear') %>
 <%- partial('live2d') %>
 
-<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="<%= theme.cdn %>/js/lib.min.js"></script>
 <!-- <script type="text/javascript" src="/js/lib.min.js"></script> -->
 <script type="text/javascript" src="<%= theme.cdns.clipboard %>"></script>
-<script type="text/javascript" src="/js/InsightSearch.js"></script>
-<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/js/zoom.min.js"></script>
-<script type="text/javascript" src="/js/sakura-app_v3.js"></script>
-<script type="text/javascript" src="/js/autoptimize.js"></script>
+<script type="text/javascript" src="<%= theme.cdn %>/js/InsightSearch.js"></script>
+<script type="text/javascript" src="<%= theme.cdn %>/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="<%= theme.cdn %>/js/zoom.min.js"></script>
+<script type="text/javascript" src="<%= theme.cdn %>/js/sakura-app_v3.js"></script>
+<script type="text/javascript" src="<%= theme.cdn %>/js/autoptimize.min.js"></script>
 <!-- //cdn1.lncld.net/static/js/3.0.4/av-min.js -->
-<script type="text/javascript" src="/js/av-min.js"></script>
+<script type="text/javascript" src="<%= theme.cdn %>/js/av-min.js"></script>
 <!-- Valine评论 -->>
 <script type="text/javascript" src="<%= theme.cdns.valine %>"></script>
-<script type="text/javascript" src="/js/botui.js"></script>
+<script type="text/javascript" src="<%= theme.cdn %>/js/botui.min.js"></script>
 <!-- 不蒜子 网页计数器 -->
 <script async type="text/javascript" src="<%= theme.cdns.busuanzi %>"></script>
 <!-- TOC目录 -->
