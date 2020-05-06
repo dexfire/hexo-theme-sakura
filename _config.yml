@@ -48,14 +48,18 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - <%= theme.cdn %>/images/cover/(1).jpg.webp
-  - <%= theme.cdn %>/images/cover/(2).jpg.webp
-  - <%= theme.cdn %>/images/cover/(3).jpg.webp
-  - <%= theme.cdn %>/images/cover/(4).jpg.webp
-  - <%= theme.cdn %>/images/cover/(5).jpg.webp
-  - <%= theme.cdn %>/images/cover/(6).jpg.webp
-  - <%= theme.cdn %>/images/cover/(7).jpg.webp
-  - <%= theme.cdn %>/images/cover/(8).jpg.webp
+  - <%= theme.cdn %>/images/cover/IMG_7631.JPG
+  - <%= theme.cdn %>/images/cover/IMG_7632.JPG
+  - <%= theme.cdn %>/images/cover/IMG_7633.JPG
+  - <%= theme.cdn %>/images/cover/IMG_7634.JPG
+  - <%= theme.cdn %>/images/cover/IMG_7635.JPG
+  - <%= theme.cdn %>/images/cover/IMG_7636.JPG
+  - <%= theme.cdn %>/images/cover/IMG_7638.JPG
+  - <%= theme.cdn %>/images/cover/IMG_7639.JPG
+  - <%= theme.cdn %>/images/cover/IMG_7642.JPG
+  - <%= theme.cdn %>/images/cover/IMG_7643.jpg
+  - <%= theme.cdn %>/images/cover/IMG_7725.jpg
+  - <%= theme.cdn %>/images/cover/IMG_7760.jpg
 
 cdns:
   tocbot: //cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js
