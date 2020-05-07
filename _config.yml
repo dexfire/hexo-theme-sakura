@@ -1,19 +1,20 @@
 # site name
 prefixName: さくら荘その
-siteName: hojun
+siteName: dexfire
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /images/custom/avatar.jpg
-url: https://sakura.hojun.cn
+url: https://dexfire.cn
 description: Live your life with passion! With some drive!
-cdn: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1
+# cdn: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0.7
+cdn: ""
 pjax: 1
 sakura_widget:
 # 0关闭 1开启
 mathjax: 0
 
 notice: hexo-Sakura主题已经开源，目前正在开发中...
-lazyloadImg: <%= theme.cdn %>/images/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
@@ -48,24 +49,26 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - <%= theme.cdn %>/images/cover/IMG_7631.JPG
-  - <%= theme.cdn %>/images/cover/IMG_7632.JPG
-  - <%= theme.cdn %>/images/cover/IMG_7633.JPG
-  - <%= theme.cdn %>/images/cover/IMG_7634.JPG
-  - <%= theme.cdn %>/images/cover/IMG_7635.JPG
-  - <%= theme.cdn %>/images/cover/IMG_7636.JPG
-  - <%= theme.cdn %>/images/cover/IMG_7638.JPG
-  - <%= theme.cdn %>/images/cover/IMG_7639.JPG
-  - <%= theme.cdn %>/images/cover/IMG_7642.JPG
-  - <%= theme.cdn %>/images/cover/IMG_7643.jpg
-  - <%= theme.cdn %>/images/cover/IMG_7725.jpg
-  - <%= theme.cdn %>/images/cover/IMG_7760.jpg
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7631.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7632.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7633.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7634.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7635.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7636.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7638.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7639.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7642.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7643.jpg
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7725.jpg
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7760.jpg
 
 cdns:
   tocbot: //cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js
   valine: //unpkg.com/valine/dist/Valine.min.js
   clipboard: //cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
   busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  aplayer: //cdn.jsdelivr.net/gh/moeplayer/hermit-x@2.9.6/assets/js/APlayer.min.js?ver=2.9.6
+  aplayer_css: //cdn.jsdelivr.net/gh/moeplayer/hermit-x@2.9.6/assets/css/APlayer.min.css?ver=2.9.6
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: 
