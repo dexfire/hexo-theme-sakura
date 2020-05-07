@@ -44,12 +44,12 @@ insight:
 技术:
     zh: 野生技术协会
     en: Geek – Only for Love
-    img: <%= theme.cdn %>/images/banner/coding.jpg
+    img: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/banner/coding.jpg
 生活:
     zh: 生活
     en: live
-    img: <%= theme.cdn %>/images/banner/writing.jpg
+    img: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/banner/writing.jpg
 
 #tag
 悦读:
-    img: <%= theme.cdn %>/images/banner/reading.jpg
+    img: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/banner/reading.jpg
