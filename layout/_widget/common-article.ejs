@@ -3,13 +3,14 @@
 <div class="pattern-center-blank"></div>
 <% if (post.photos && post.photos.length){ %>
 <div class="pattern-center single-center">
-  <!-- 有配图默认渲染第一张 -->
+  <!-- 头图：有配图默认渲染第一张，出错则没有配图 -->
   <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);"
-    src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
+    src="<%- theme.lazyloadImg %>" data-src="<%= post.photos[0] || 'http://www.dmoe.cc/random.php' %>">
   </div>
   <header class="pattern-header single-header">
     <h1 class="entry-title">
       <%- post.title %></h1>
+    <!-- 顶部信息栏：作者信息，日期，浏览量。TODO: 标签，分类 -->
     <p class="entry-census">
       <span>
         <a href="<%- post.authorLink%>">
@@ -32,7 +33,6 @@
     <main id="main" class="site-main" role="main">
       <article id="post-1"
         class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         <% if (!post.photos[0]){ %>
         <header class="entry-header">
