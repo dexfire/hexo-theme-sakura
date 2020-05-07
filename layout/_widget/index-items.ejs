@@ -3,7 +3,7 @@
 
   <div class="post-thumb">
     <a href="<%- url_for(post.path) %>">
-      <img class="lazyload" onerror="imgError(this,3)" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] || theme.cdn + '/images/other/image-404.png' %>">
+      <img class="post-cover lazyload" onerror="imgError(this,3)" src="<%- theme.lazyloadImg %>" data-src="<%= post.photos[0] || 'http://www.dmoe.cc/random.php' %>">
     </a>
   </div>
   <div class="post-content-wrap">
@@ -28,12 +28,7 @@
         </span>
       </div>
       <div class="float-content">
-        <p><% if (post.description){ %>
-          <%- post.description -%>
-          <% } else { %>
-          <%- truncate(post.content, {length: 17}) -%>
-          <% } %>
-        </p>
+        <% if (post.description){ %><%- post.description -%><% } else { %><%- truncate(strip_html(post.content), {length: 88}) -%><% } %>
         <div class="post-bottom">
           <a href="<%- url_for(post.path) %>" class="button-normal">
             <i class="iconfont icon-caidan"></i>
