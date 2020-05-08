@@ -30,10 +30,10 @@
     <div id="pagination"><a href="<%- url_for(page.next_link) %>" class="">Previous</a></div>
   <% } %>
   <script type="text/javascript">
-    $(document).ready(function () {
-      // 生成主页图
-      bgs = "<%= theme.bg %>".split(",");
-      $(".headertop")[0].style.height = 550;
-    });
+    // $(document).ready(function () {
+    // 生成主页图
+    bgs = "<%= theme.bg %>".split(",");
+    document.getElementsByClassName("headertop")[0].style.height = "550px";
+    // });
   </script>
 </div>
