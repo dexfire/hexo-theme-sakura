@@ -13,7 +13,7 @@ sakura_widget:
 # 0关闭 1开启
 mathjax: 0
 
-notice: hexo-Sakura主题已经开源，目前正在开发中...
+notice: hexo-Sakura主题已经开源，欢迎访问...[![](https://img.shields.io/badge/dexfire-hexo--theme--sakura?style=plastic&logo=git)](https://github.com/dexfire/hexo-theme-sakura)
 lazyloadImg: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
