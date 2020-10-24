@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
-<!--
-Theme by Mashiro
-                      /^--^\     /^--^\     /^--^\
-                      \____/     \____/     \____/
-                     /      \   /      \   /      \
-                    |        | |        | |        |
-                     \__  __/   \__  __/   \__  __/
-|^|^|^|^|^|^|^|^|^|^|^|^\ \^|^|^|^/ /^|^|^|^|^\ \^|^|^|^|^|^|^|^|^|^|^|^|
-| | | | | | | | | | | | |\ \| | |/ /| | | | | | \ \ | | | | | | | | | | |
-########################/ /######\ \###########/ /#######################
-| | | | | | | | | | | | \/| | | | \/| | | | | |\/ | | | | | | | | | | | |
-|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
--->
-
 <head>
   <meta charset="utf-8">
+  <% if (page.keywords){ %>
+    <meta name="keywords" content="<%= page.keywords %>,<%= config.keywords %>">
+  <% } else if (config.keywords){ %>
+    <meta name="keywords" content="<%= config.keywords %>">
+  <%} %>
+  <% if (page.description){ %>
+    <meta name="description" content="<%= page.description %>">
+  <% } else { %>
+    <meta name="description" content="樱花博客，一个记录个人成长的地方。">
+  <%} %>
+  <meta name="keywords" content="关键词,关键词,关键词" />
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="author" content="dexfire, dexfire@gmail.com" />
   <%
-  var title = page.title;
+    var title = page.title;
 
-  if (is_archive()){
-    title = __('archive_a');
+    if (is_archive()){
+      title = __('archive_a');
 
-    if (is_month()){
-      title += ': ' + page.year + '/' + page.month;
-    } else if (is_year()){
-      title += ': ' + page.year;
+      if (is_month()){
+        title += ': ' + page.year + '/' + page.month;
+      } else if (is_year()){
+        title += ': ' + page.year;
+      }
+    } else if (is_category()){
+      title = __('category') + ': ' + page.category;
+    } else if (is_tag()){
+      title = __('tag') + ': ' + page.tag;
     }
-  } else if (is_category()){
-    title = __('category') + ': ' + page.category;
-  } else if (is_tag()){
-    title = __('tag') + ': ' + page.tag;
-  }
   %>
   <title itemprop="name">
     <% if (title){ %>
@@ -58,9 +55,7 @@ Theme by Mashiro
   <link rel="stylesheet" href="<%= theme.cdn %>/css/zoom.css" type="text/css" media="all">
   <link rel="stylesheet" href="<%= theme.cdn %>/css/sharejs.css" type="text/css" media="all">
   <link rel="stylesheet" href="<%= theme.cdn %>/css/custom.css" type="text/css" media="all">
-  <!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css" type="text/css" media="all"> -->
-  <!-- <link rel="stylesheet" id="APlayer.min-css" href="<%= theme.cdns.aplayer %>" type="text/css" media="all">
-  <script type="text/javascript" src="<%= theme.cdns.aplayer_css %>"></script> -->
+  <link rel="stylesheet" href="<%= theme.cdns.font_awesome_css %>">
   <script>
     /*Initial Variables*/
     var mashiro_option = new Object();
@@ -87,8 +82,7 @@ Theme by Mashiro
     /*End of Initial Variables*/
   </script>
   <script type="text/javascript">
-    // "<%= theme.bg%>".split(",")
-    var bg = "<%= theme.bg%>".split(",");
+    var bg = "<%= theme.bg %>".split(",");
     var bgindex = Math.floor(Math.random() * bg.length);
     if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
       alert('朋友，IE浏览器未适配哦~');

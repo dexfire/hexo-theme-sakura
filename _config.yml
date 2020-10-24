@@ -1,11 +1,11 @@
 # site name
-prefixName: さくら荘その
-siteName: dexfire
+prefixName: Dexfire
+siteName: のさくら荘そ
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /images/custom/avatar.jpg
 url: https://dexfire.cn
-description: Live your life with passion! With some drive!
+description: 热爱是最终的救赎，勇敢是唯一的退路~❤
 cdn: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0.8
 # cdn: ""
 pjax: 1
@@ -13,11 +13,22 @@ sakura_widget:
 # 0关闭 1开启
 mathjax: 0
 
-notice: hexo-Sakura主题已经开源，欢迎访问...[![](https://img.shields.io/badge/dexfire-hexo--theme--sakura?style=plastic&logo=git)](https://github.com/dexfire/hexo-theme-sakura)
+signature:
+  - 浏览器真的很爱计较自己是不是默认浏览器。
+  - 热爱是最终的救赎，勇敢是唯一的退路~❤
+  - 总是叹气会让幸福悄悄溜走傲~
+  - 今日阳光照常升起。
+  - 对酒当歌，人生几何。
+  - 我们得去吃喝嫖赌，而不是吃爱情的苦。
+  - 永远认清现实，也永远相信童话。
+  - 都是喝AD钙长大，凭什么他们是A而我是D？
+  
+
+notice: hexo-Sakura主题已经开源，欢迎访问...<a href="https://github.com/dexfire/hexo-theme-sakura"><img src="https://img.shields.io/badge/dexfire-hexo--theme--sakura?style=plastic&logo=git"/></a>
 lazyloadImg: https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
-  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  主页: { path: /, fa: fa-fort-awesome faa-shake }
   时间线: { path: /archives, fa: fa-archive faa-shake, submenus: {
     技术: {path: /categories/技术/, fa: fa-code },
     生活: {path: /categories/生活/, fa: fa-file-text-o },
@@ -33,14 +44,14 @@ menus:
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   友人帐: { path: /links/, fa: fa-link faa-shake }
-  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  咖啡: { path: /donate/, fa: fa-heart faa-pulse }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: {
-    我？: {path: /about/, fa: fa-meetup},
-    主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
-    更新: {path: /theme-sakura/update_logs.html, fa: iconfont fa-bug },
-    Lab: {path: /lab/, fa: fa-cogs },
+    我: { path: /about/, fa: fa-meetup },
+    主题: { path: /theme-sakura/, fa: iconfont icon-sakura },
+    更新: { path: /theme-sakura/update_logs.html, fa: fa-ravelry },
+    实验室: { path: /lab/, fa: fa-cogs },
   } }
-  客户端: { path: /client/, fa: fa-android faa-vertical }
+#  客户端: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
 
@@ -50,18 +61,21 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7631.JPG
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7632.JPG
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7633.JPG
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7634.JPG
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7635.JPG
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7636.JPG
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7638.JPG
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7639.JPG
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7642.JPG
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7643.jpg
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7725.jpg
-  - https://cdn.jsdelivr.net/gh/dexfire/cdn@v1.0/images/cover/IMG_7760.jpg
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_0001.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_0002.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7631.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7632.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7633.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7634.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7635.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7636.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7638.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7639.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7642.JPG
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7643.jpg
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7725.jpg
+  - https://cdn.jsdelivr.net/gh/dexfire/cdn/images/cover/IMG_7760.jpg
+  - https://dexfire.cn/img/20200614001.jpg
 
 cdns:
   tocbot: //cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js
@@ -70,6 +84,7 @@ cdns:
   busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
   aplayer: //cdn.jsdelivr.net/gh/moeplayer/hermit-x@2.9.6/assets/js/APlayer.min.js?ver=2.9.6
   aplayer_css: //cdn.jsdelivr.net/gh/moeplayer/hermit-x@2.9.6/assets/css/APlayer.min.css?ver=2.9.6
+  font_awesome_css: //cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dot
@@ -79,6 +94,13 @@ startdash:
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /images/startdash/sakura.md.png}
   - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /images/startdash/bilibili.jpg}
   - {url: /, title: dexfireの吐槽乐园, desc: 技术服务, img: /images/startdash/wangshiwu.jpg}
+
+post:
+  - author: Dexfire
+  - avatar: //q2.qlogo.cn/headimg_dl?dst_uin=1944404463&spec=5
+  - authorLink: https://dexfire.cn
+  - authorAbout: 如果这篇文章对你有帮助的话，欢迎留个👣嗷~ヾ(≧O≦)〃
+  - authorDesc: 热爱是最终的救赎，勇敢是唯一的退路~❤
 
 # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
 analytics:

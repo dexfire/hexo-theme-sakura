@@ -24,6 +24,8 @@
         ·</span>
       <%= date(post.date, 'YYYY-M-D') %><span class="bull">
         ·</span>
+      <% if(post.update){ %>last updated: <%= date(post.update, 'YYYY-M-D') %><span class="bull">
+        ·</span><% } %>
       <span id="busuanzi_value_page_pv">1</span>次阅读</p>
   </header>
 </div>
@@ -73,7 +75,9 @@
         </footer><!-- .entry-footer -->
       </article>
       <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
+	  <div class="toc-container">
+		<div class="toc" style="background: none;"></div>
+	  </div>
       <section class="post-squares nextprev">
         <% if (post.prev){ %>
         <% if (post.next) { %>
@@ -123,17 +127,23 @@
       <%- partial('_partial/comment') %>
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="<%- post.authorLink %>" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image"
-              alt="<%- post.author %>" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-              <a href="<%- post.authorLink%>" itemprop="url" rel="author"><%- post.author %></a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i><%- post.authorAbout%></p>
+			<% if (post.author) { %>
+				  <a href="<%- post.authorLink %>" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image"
+					  alt="<%- post.author %>" height="70" width="70"></a>
+				  <div class="meta">
+					<span class="title">Author</span>
+					<h3 itemprop="name"><a href="<%- post.authorLink %>" itemprop="url" rel="author"><%- post.author %></a></h3>
+				  </div>
+				</div><hr><p><i class="iconfont icon-write"></i><%- post.authorAbout %></p>
+			<% } else { %>
+				  <a href="<%- theme.post.authorLink %>" class="profile gravatar"><img src="<%- theme.post.avatar %>" itemprop="image"
+					  alt="<%- theme.post.author %>" height="70" width="70"></a>
+				  <div class="meta">
+					<span class="title">Author</span>
+					<h3 itemprop="name"><a href="<%- theme.post.authorLink %>" itemprop="url" rel="author"><%- theme.post.author %></a></h3>
+				  </div>
+				</div><hr><p><i class="iconfont icon-write"></i><%- theme.post.authorAbout %></p>
+			<% } %>
       </section>
     </main><!-- #main -->
   </div><!-- #primary -->
